@@ -24,6 +24,8 @@ class Main extends Sprite
 	public static var skipgraphics:Bool = Sys.args().contains("-skipgraphics");
 	public static var flippymode:Bool = Sys.args().contains("-flippymode");
 
+	public static var watermarks = false;
+
 	public static var streamMethod:String;
 
 	public function new()

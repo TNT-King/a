@@ -45,4 +45,9 @@ class Paths
         return 'assets/videos/$key.mp4';
     }
 
+    inline static public function font(key:String)
+    {
+        return 'assets/fonts/$key';
+    }
+
 }

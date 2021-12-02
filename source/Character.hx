@@ -260,30 +260,30 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 				animation.addByPrefix('hey', 'BF HEY', 24, false);
-				animation.addByPrefix('attack', 'boyfriend attack', 24, false);
-				animation.addByPrefix('hit', 'BF hit', 24, false);
-				animation.addByPrefix('dodge', 'boyfriend dodge', 24, false);
-
+				animation.addByPrefix('passOut', 'Bf passing out', 24, false);
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+				animation.addByPrefix('hit', "hit", 24, false);
 
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
 
-				addOffset('idle', -5);
-				addOffset("singUP", -29, 27);
-				addOffset("singRIGHT", -38, -7);
-				addOffset("singLEFT", 12, -6);
-				addOffset("singDOWN", -10, -50);
-				addOffset("singUPmiss", -29, 27);
-				addOffset("singRIGHTmiss", -30, 21);
-				addOffset("singLEFTmiss", 12, 24);
-				addOffset("singDOWNmiss", -11, -19);
-				addOffset("hey", 7, 4);
-				addOffset('firstDeath', 37, 11);
-				addOffset('deathLoop', 37, 5);
-				addOffset('deathConfirm', 37, 69);
-				addOffset('scared', -4);
+				addOffset('idle', 0, 1);
+				addOffset("singUP", -6, 15);
+				addOffset("singRIGHT", -12, -8);
+				addOffset("singLEFT", 36, -8);
+				addOffset("singDOWN", 13, -50);
+				addOffset("singUPmiss", -6, 12);
+				addOffset("singRIGHTmiss", -6, 4);
+				addOffset("singLEFTmiss", 38, 0);
+				addOffset("singDOWNmiss", 6, -36);
+				addOffset("hey", 7, -1);
+				addOffset("passOut", 14, -22);
+				addOffset('firstDeath', 57, -13);
+				addOffset('deathLoop', 57, -17);
+				addOffset('deathConfirm', 83, 51);
+				addOffset('scared', -4, 0);
+				//addOffset('hit', -1, 10);
 
 				playAnim('idle');
 
@@ -457,6 +457,32 @@ class Character extends FlxSprite
 
 			case 'parents-christmas':
 				frames = Paths.getSparrowAtlas("christmas/mom_dad_christmas_assets");
+				animation.addByPrefix('idle', 'Parent Christmas Idle', 24, false);
+				animation.addByPrefix('singUP', 'Parent Up Note Dad', 24, false);
+				animation.addByPrefix('singDOWN', 'Parent Down Note Dad', 24, false);
+				animation.addByPrefix('singLEFT', 'Parent Left Note Dad', 24, false);
+				animation.addByPrefix('singRIGHT', 'Parent Right Note Dad', 24, false);
+
+				animation.addByPrefix('singUP-alt', 'Parent Up Note Mom', 24, false);
+
+				animation.addByPrefix('singDOWN-alt', 'Parent Down Note Mom', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'Parent Left Note Mom', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'Parent Right Note Mom', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -47, 24);
+				addOffset("singRIGHT", -1, -23);
+				addOffset("singLEFT", -30, 16);
+				addOffset("singDOWN", -31, -29);
+				addOffset("singUP-alt", -47, 24);
+				addOffset("singRIGHT-alt", -1, -24);
+				addOffset("singLEFT-alt", -30, 15);
+				addOffset("singDOWN-alt", -30, -27);
+
+				playAnim('idle');
+
+			case 'parents-creepy':
+				frames = Paths.getSparrowAtlas('christmas/Parents_assets');
 				animation.addByPrefix('idle', 'Parent Christmas Idle', 24, false);
 				animation.addByPrefix('singUP', 'Parent Up Note Dad', 24, false);
 				animation.addByPrefix('singDOWN', 'Parent Down Note Dad', 24, false);

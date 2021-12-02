@@ -145,7 +145,7 @@ class ConfigMenu extends MusicBeatState
 		noCapValue = Config.noFpsCap;
 		scheme = Config.controllerScheme;
 		
-		var tex = FlxAtlasFrames.fromSparrow('assets/images/FNF_main_menu_assets.png', 'assets/images/FNF_main_menu_assets.xml');
+		var tex = FlxAtlasFrames.fromSparrow('main_menu.png', 'main_menu.xml');
 		var optionTitle:FlxSprite = new FlxSprite(0, 55);
 		optionTitle.frames = tex;
 		optionTitle.animation.addByPrefix('selected', "options white", 24);
